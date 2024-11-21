@@ -6,3 +6,15 @@ sources:
     schema: public
     tables:
       - name: activity
+        loaded_at_field: due_to 
+        freshness:
+          warn_after: {count: 1, period: day}
+          error_after: {count: 2, period: day}
+      - name: deal_changes
+        loaded_at_field: change_time 
+        freshness:
+          warn_after: {count: 1, period: day}
+          error_after: {count: 2, period: day}
+      - name: stages
+      - name: users
+      - name: fields
