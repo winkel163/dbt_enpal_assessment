@@ -1,0 +1,1 @@
+select * from {{ source('postgres_public','users') }}

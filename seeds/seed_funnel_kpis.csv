@@ -1,0 +1,12 @@
+id,stage_id,activity_type,funnel_step,funnel_kpi,description
+1,1,null,Step 1: Lead Generation,leads_generated,The number of new leads generated during the month.
+2,2,null,Step 2: Qualified Lead,qualified_leads,The number of leads that were qualified during the month.
+3,null,meeting,Step 2.1: Sales Call 1,sales_calls_1_completed,The number of first sales calls completed during the month.
+4,3,null,Step 3: Needs Assessment,needs_assessments_completed,The number of deals that underwent a needs assessment during the month.
+5,null,sc_2,Step 3.1: Sales Call 2,sales_calls_2_completed,The number of second sales calls completed during the month.
+6,4,null,Step 4: Proposal/Quote Preparation,proposals_prepared,The number of proposals or quotes prepared during the month.
+7,5,null,Step 5: Negotiation,deals_in_negotiation,The number of deals that entered the negotiation stage during the month.
+8,6,null,Step 6: Closing,deals_closed,The number of deals closed (won) during the month.
+9,7,null,Step 7: Implementation/Onboarding,onboarding_completed,The number of customers that completed onboarding during the month.
+10,8,null,Step 8: Follow-up/Customer Success,customer_followups,The number of follow-up activities or customer success interactions completed.
+11,9,null,Step 9: Renewal/Expansion,renewals_or_expansions,The number of renewals or expansions completed during the month.

@@ -1,0 +1,42 @@
+version: 2
+
+models:  
+  - name: stg_deal_changes
+    description: ""
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - deal_id
+            - change_time
+            - changed_field_key
+            - new_value
+    columns:
+      - name: deal_id
+        tests:
+          - not_null
+      - name: change_time
+        tests:
+          - not_future_date
+  
+  - name: stg_activity
+    columns:
+      - name: activity_id
+        tests:
+          - unique
+          - not_null
+  
+  - name: rep_sales_funnel_monthly
+    description: ""
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - month
+            - funnel_step
+  
+  - name: rep_sales_funnel_stage_stats
+    description: ""
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - deal_created_month
+            - stage_name
